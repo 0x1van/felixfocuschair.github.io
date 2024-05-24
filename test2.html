@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix’s Focus Chair™</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 2s infinite alternate;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-900 text-white text-center py-6">
+        <h1 class="text-4xl font-bold">Felix’s Focus Chair™</h1>
+        <p class="mt-2">Your ultimate solution to reclaim concentration and productivity.</p>
+    </header>
+    <section id="intro" class="flex flex-col md:flex-row items-center p-8 bg-white shadow-md">
+        <img src="https://i0.wp.com/www.interesly.com/wp-content/uploads/2016/05/tranquilizing-chair.jpg?ssl=1" alt="Felix’s Focus Chair™" class="w-full md:w-1/2 floating">
+        <div class="md:w-1/2 mt-6 md:mt-0 md:ml-6">
+            <h2 class="text-3xl font-bold">Why Choose Felix’s Focus Chair™?</h2>
+            <p class="mt-4">The Focus Chair™ is an invention designed to combat appnesia by physically restraining the user to help them focus and avoid distractions.</p>
+            <ul class="list-disc list-inside mt-4">
+                <li>Sturdy wooden chair with padded upholstery</li>
+                <li>Straps at the wrists, ankles, and torso to prevent movement</li>
+                <li>Helmet-like apparatus to block vision and limit external stimuli</li>
+            </ul>
+            <a href="#order" class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Order Now</a>
+        </div>
+    </section>
+    <section id="features" class="py-8 px-4 md:px-8 bg-gray-100">
+        <h2 class="text-3xl font-bold text-center mb-6">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <h3 class="text-2xl font-semibold">Comfortable Design</h3>
+                <p class="mt-2">The chair comes with padded upholstery to ensure maximum comfort while you work.</p>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <h3 class="text-2xl font-semibold">Secure Straps</h3>
+                <p class="mt-2">Straps at the wrists, ankles, and torso help to keep you in place, preventing unnecessary movement.</p>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <h3 class="text-2xl font-semibold">Focus Helmet</h3>
+                <p class="mt-2">The helmet blocks your vision and reduces external stimuli, helping you to concentrate better.</p>
+            </div>
+        </div>
+    </section>
+    <section id="order" class="py-8 px-4 md:px-8 bg-white shadow-md text-center">
+        <h2 class="text-3xl font-bold mb-6">Order Your Felix’s Focus Chair™ Today!</h2>
+        <form action="/submit-order" method="post" class="max-w-lg mx-auto">
+            <label for="name" class="block text-left mb-2 font-semibold">Name:</label>
+            <input type="text" id="name" name="name" required class="w-full p-2 mb-4 border rounded-md">
+            <label for="email" class="block text-left mb-2 font-semibold">Email:</label>
+            <input type="email" id="email" name="email" required class="w-full p-2 mb-4 border rounded-md">
+            <label for="quantity" class="block text-left mb-2 font-semibold">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required class="w-full p-2 mb-6 border rounded-md">
+            <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Submit</button>
+        </form>
+    </section>
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p>&copy; 2024 Felix’s Focus Chair™. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
